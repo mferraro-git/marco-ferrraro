@@ -22,39 +22,17 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
-    <div class="container">
-      <a class="navbar-brand" href="#">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-  </nav>
-
   <section class="content">
     <section class="hero" id="home">
       <div class="hero-image">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
             <h1 class="hero-title">Nice to meet you!</h1>
-            <p class="lead hero-description">My name is Marco, and I am a recent graduate with a strong passion
-              for Computer Science.</p>
+            <p class="lead hero-description">My name is Marco, and I am a recent graduate with a strong passion for Computer Science.</p>
+            <div class="hero-cta">
+              <a href="#portfolio" class="btn btn-hero">View My Work</a>
+              <a href="#contact" class="btn btn-hero-outline">Get In Touch</a>
+            </div>
           </div>
         </div>
       </div>
@@ -123,17 +101,16 @@
     <section id="portfolio">
       <div class="container mt-3">
         <h1 class="text-center">Portfolio</h1>
+        <p class="lead-text">Explore my recent projects in data science, machine learning, and software development.</p>
         <div class="row">
           <div class="col-lg-4 mt-4">
-            <div class="card">
-              <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+            <div class="card portfolioContent">
+              <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Bot detection in Twitter">
               <div class="card-body">
                 <h4 class="card-title">Bot detection in Twitter</h4>
-                <p class="card-text">Scientific investigation done to evaluate the performance of a Bot
-                  detection model for Twitter.</p>
+                <p class="card-text">Scientific investigation done to evaluate the performance of a Bot detection model for Twitter.</p>
                 <div class="text-center">
-                  <a href="https://analysis-of-bots-prescence.hostful.io/" class="btn btn-cta">Link to
-                    Paper</a>
+                  <a href="https://analysis-of-bots-prescence.hostful.io/" class="btn btn-cta">Link to Paper</a>
                 </div>
               </div>
             </div>
@@ -141,14 +118,12 @@
 
           <div class="col-lg-4 mt-4">
             <div class="card portfolioContent">
-              <img class="card-img-top" src="images/portfolioImage2.jpg" alt="Card image" style="width:100%">
+              <img class="card-img-top" src="images/portfolioImage2.jpg" alt="Data Science Bootcamp">
               <div class="card-body">
                 <h4 class="card-title">Data Science Bootcamp</h4>
-                <p class="card-text">Work done at Intituto Tecnologico de Costa Rica. AI, ML,
-                  and Data Science practical exercises and projects.</p>
+                <p class="card-text">Work done at Intituto Tecnologico de Costa Rica. AI, ML, and Data Science practical exercises and projects.</p>
                 <div class="text-center">
-                  <a href="https://github.com/mantofer02/DataScienceBootcamp" class="btn btn-cta">Link
-                    to Repository</a>
+                  <a href="https://github.com/mantofer02/DataScienceBootcamp" class="btn btn-cta">Link to Repository</a>
                 </div>
               </div>
             </div>
@@ -156,15 +131,12 @@
 
           <div class="col-lg-4 mt-4">
             <div class="card portfolioContent">
-              <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
+              <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Machine Learning Repository">
               <div class="card-body">
                 <h4 class="card-title">Machine Learning Repository</h4>
-                <p class="card-text">ML models and projects done at UCR. Work includes
-                  Deep Reinforment learning applied to games.</p>
+                <p class="card-text">ML models and projects done at UCR. Work includes Deep Reinforment learning applied to games.</p>
                 <div class="text-center">
-                  <a href="https://github.com/mantofer02/CI-0148-2022-S2" class="btn btn-cta">Link
-                    to
-                    Repository</a>
+                  <a href="https://github.com/mantofer02/CI-0148-2022-S2" class="btn btn-cta">Link to Repository</a>
                 </div>
               </div>
             </div>
@@ -176,7 +148,8 @@
 
     <section id="contact" class="contact">
       <div class="container">
-        <h1 class="text-center">Contact Me!</h1>
+        <h1 class="text-center">Let's Connect</h1>
+        <p class="lead-text">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
         <div class="row justify-content-center">
           <div class="contact-card col-lg-3 col-md-6 col-sm-6 col-10 mt-4"> <!-- Added col-md-6 class -->
             <a href="mailto:mantofer2000@gmail.com?subject=Hello!&body=I%20hope%20this%20email%20finds%20you%20well.">
@@ -211,7 +184,12 @@
 
     <section class="footer">
       <div class="footer-content">
-        <p>&copy; 2023 Marco Ferraro. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="mailto:mantofer2000@gmail.com" class="footer-link"><i class="fa fa-envelope"></i></a>
+          <a href="https://github.com/mantofer02" target="_blank" class="footer-link"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/marco-ferraro-1182a1200/" target="_blank" class="footer-link"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2025 Marco Ferraro. All rights reserved.</p>
       </div>
     </section>
 
